@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success Stories - Tavish Infotech</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-gradient: linear-gradient(135deg, #DF4231 0%, #362CC0 100%);
+            --primary-gradient: linear-gradient(135deg, #362CC0 0%, #DF4231 100%);
             --text-dark: #0f172a;
             --text-light: #64748b;
         }
@@ -17,10 +17,30 @@
 
         .container { max-width: 1100px; margin: 0 auto; padding: 100px 20px; }
 
-        /* --- Custom Header --- */
-        .section-intro { text-align: center; margin-bottom: 100px; }
-        .label { color: #DF4231; font-weight: 800; letter-spacing: 3px; font-size: 13px; display: block; margin-bottom: 15px; }
-        .main-h { font-size: clamp(2.5rem, 6vw, 3.5rem); font-weight: 800; letter-spacing: -2px; line-height: 1.1; }
+        /* --- UPDATED HEADER (As per your request) --- */
+        .section-intro { text-align: center; margin-bottom: 80px; }
+        
+        /* Main Heading - Large and Bold */
+        .main-h { 
+            font-size: 5rem; 
+            font-weight: 900; 
+            letter-spacing: -3px; 
+            line-height: 1; 
+            margin-bottom: 15px;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        /* Subheading - Smaller and Elegant */
+        .sub-h {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1e293b;
+            letter-spacing: -0.5px;
+            opacity: 0.85;
+        }
 
         /* --- Alternating Row Layout --- */
         .story-row { 
@@ -29,12 +49,18 @@
             gap: 60px; 
             margin-bottom: 120px;
             position: relative;
+            transition: all 0.4s ease; /* Hover transition */
+            padding: 20px;
+            border-radius: 40px;
         }
 
-        /* Reverse row for every second item */
+        /* --- HOVER EFFECT --- */
+        .story-row:hover {
+            transform: translateY(-10px);
+        }
+
         .story-row:nth-child(even) { flex-direction: row-reverse; }
 
-        /* Left Side: Visual/Context */
         .story-visual { 
             flex: 1; 
             background: #f8fafc; 
@@ -42,6 +68,13 @@
             border-radius: 40px; 
             position: relative;
             border: 1px solid #f1f5f9;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            transition: 0.4s ease;
+        }
+
+        .story-row:hover .story-visual {
+            box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+            border-color: #e2e8f0;
         }
         
         .industry-tag { 
@@ -50,15 +83,13 @@
             padding: 8px 20px; border-radius: 50px; font-weight: 700; font-size: 12px;
         }
 
-        /* Right Side: Content */
         .story-content { flex: 1; }
-        .story-title { font-size: 2rem; font-weight: 800; margin-bottom: 20px; color: #1e293b; }
+        .story-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 20px; color: #1e293b; }
         
         .data-point { display: flex; gap: 15px; margin-bottom: 25px; align-items: flex-start; }
         .dot { width: 12px; height: 12px; border-radius: 50%; background: #DF4231; margin-top: 8px; flex-shrink: 0; }
         .data-point b { display: block; font-size: 14px; text-transform: uppercase; color: #94a3b8; margin-bottom: 4px; }
 
-        /* Impact Highlights (The Numbers) */
         .impact-grid { 
             display: grid; 
             grid-template-columns: repeat(3, 1fr); 
@@ -70,20 +101,19 @@
         .impact-box h5 { font-size: 1.8rem; font-weight: 800; color: #362CC0; margin-bottom: 5px; }
         .impact-box span { font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; line-height: 1.2; display: block; }
 
-        /* CTA */
         .footer-cta { text-align: center; margin-top: 50px; }
         .btn-main { 
             background: var(--primary-gradient); color: #fff; padding: 20px 50px; 
             border-radius: 50px; text-decoration: none; font-weight: 800; display: inline-block;
             transition: 0.3s; box-shadow: 0 20px 40px rgba(54, 44, 192, 0.2);
         }
-        .btn-main:hover { transform: translateY(-5px); box-shadow: 0 30px 60px rgba(54, 44, 192, 0.3); }
+        .btn-main:hover { transform: scale(1.05); box-shadow: 0 30px 60px rgba(54, 44, 192, 0.3); }
 
-        /* Responsive */
         @media (max-width: 900px) {
             .story-row, .story-row:nth-child(even) { flex-direction: column; gap: 40px; }
             .story-visual { width: 100%; padding: 30px; }
-            .main-h { font-size: 2.2rem; }
+            .main-h { font-size: 3rem; letter-spacing: -1.5px; }
+            .sub-h { font-size: 1.4rem; }
         }
     </style>
 </head>
@@ -91,8 +121,8 @@
 
     <div class="container">
         <header class="section-intro">
-            <span class="label">SUCCESS STORIES</span>
-            <h1 class="main-h">Real Impact. Real Results.</h1>
+            <h1 class="main-h">SUCCESS STORIES</h1>
+            <p class="sub-h">Transformative Results with AI-Powered Oracle</p>
         </header>
 
         <div class="story-row">
