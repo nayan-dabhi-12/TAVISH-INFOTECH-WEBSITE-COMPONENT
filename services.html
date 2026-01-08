@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tavish Infotech Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Scoped Services CSS --- */
+        .ti-svc-section {
+            padding: 100px 20px;
+            background-color: #fcfcfd;
+            font-family: 'Inter', sans-serif;
+            color: #111827;
+        }
+
+        .ti-svc-container {
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        /* --- Header --- */
+        .ti-svc-header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .ti-svc-label {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #DF4231;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .ti-svc-h2 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #111827;
+            letter-spacing: -0.5px;
+        }
+
+        .ti-svc-p {
+            font-size: 1.15rem;
+            color: #4B5563;
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* --- Grid Layout --- */
+        .ti-svc-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        /* --- Service Card --- */
+        .ti-svc-card {
+            background: #ffffff;
+            padding: 35px 30px;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        /* Top Border Gradient Accent on Hover */
+        .ti-svc-card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 4px;
+            background: linear-gradient(90deg, #DF4231, #362CC0);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: left;
+        }
+
+        .ti-svc-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.08);
+            border-color: rgba(54, 44, 192, 0.2);
+        }
+
+        .ti-svc-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Icons Styles */
+        .ti-svc-icon-box {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ti-svc-icon-box svg {
+            width: 100%;
+            height: 100%;
+            fill: url(#ti-grad-svc);
+        }
+
+        .ti-svc-card-h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        .ti-svc-card-p {
+            font-size: 0.95rem;
+            color: #4B5563;
+            line-height: 1.6;
+        }
+
+        /* --- Responsive Queries --- */
+        @media (max-width: 1100px) {
+            .ti-svc-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 640px) {
+            .ti-svc-grid { grid-template-columns: 1fr; }
+            .ti-svc-header { text-align: left; }
+            .ti-svc-card { padding: 30px 25px; }
+            .ti-svc-section { padding: 60px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+        <linearGradient id="ti-grad-svc" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#DF4231" />
+            <stop offset="100%" stop-color="#362CC0" />
+        </linearGradient>
+    </svg>
+
+    <section class="ti-svc-section">
+        <div class="ti-svc-container">
+            
+            <header class="ti-svc-header">
+                <span class="ti-svc-label">OUR SERVICES</span>
+                <h2 class="ti-svc-h2">Comprehensive Oracle Solutions <br> India Enterprises Trust</h2>
+                <p class="ti-svc-p">Expert services from a leading Oracle APEX development firm specializing in AI-powered innovation.</p>
+            </header>
+
+            <div class="ti-svc-grid">
+                
+                <div class="ti-svc-card">
+                    <div class="ti-svc-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M21 16.5C21 16.88 20.79 17.21 20.47 17.38L12.57 21.82C12.41 21.94 12.21 22 12 22C11.79 22 11.59 21.94 11.43 21.82L3.53 17.38C3.21 17.21 3 16.88 3 16.5V7.5C3 7.12 3.21 6.79 3.53 6.62L11.43 2.18C11.59 2.06 11.79 2 12 2C12.21 2 12.41 2.06 12.57 2.18L20.47 6.62C20.79 6.79 21 7.12 21 7.5V16.5Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 22V12M12 12L20.5 7.5M12 12L3.5 7.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                    <h3 class="ti-svc-card-h3">Oracle APEX Development</h3>
+                    <p class="ti-svc-card-p">Enterprise-grade applications from our AI-powered Oracle APEX development company. We create scalable, secure solutions that reduce development time by 60% and significantly cut costs while maintaining Oracle best practices.</p>
+                </div>
+
+                <div class="ti-svc-card">
+                    <div class="ti-svc-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                    <h3 class="ti-svc-card-h3">Oracle Consultation & Strategy</h3>
+                    <p class="ti-svc-card-p">Expert consultants from our Oracle Partner company assess your infrastructure, define architecture, and create actionable roadmaps for digital transformation using proven Oracle solutions India organizations depend on.</p>
+                </div>
+
+                <div class="ti-svc-card">
+                    <div class="ti-svc-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M17 16L21 12L17 8M7 8L3 12L7 16M13 3L11 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 class="ti-svc-card-h3">Legacy System Migration</h3>
+                    <p class="ti-svc-card-p">Seamlessly migrate from outdated platforms including Oracle Forms to modern APEX applications. Our Oracle APEX development firm ensures data integrity, zero business disruption, and improved system performance.</p>
+                </div>
+
+                <div class="ti-svc-card">
+                    <div class="ti-svc-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M4 4H20V16H4V4Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 20H16M12 16V20" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                    <h3 class="ti-svc-card-h3">Oracle Forms Modernization</h3>
+                    <p class="ti-svc-card-p">Transform legacy Oracle Forms into responsive web-based APEX applications with enhanced usability, superior performance, and reduced maintenance overhead from our specialized team.</p>
+                </div>
+
+                <div class="ti-svc-card">
+                    <div class="ti-svc-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                    <h3 class="ti-svc-card-h3">24/7 Support & Maintenance</h3>
+                    <p class="ti-svc-card-p">Comprehensive Oracle application support with proactive monitoring, rapid issue resolution, and continuous improvements ensuring your business-critical systems run flawlessly.</p>
+                </div>
+
+                <div class="ti-svc-card">
+                    <div class="ti-svc-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21.18L19 17.18V13.18L12 17.18L5 13.18Z" fill="currentColor"/></svg>
+                    </div>
+                    <h3 class="ti-svc-card-h3">Training & Workshops</h3>
+                    <p class="ti-svc-card-p">Empower your teams with hands-on Oracle APEX and PL/SQL training programs enabling organizations to independently manage and extend their applications with confidence.</p>
+                </div>
+
+                <div class="ti-svc-card">
+                    <div class="ti-svc-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M17.5 19C15.01 19 13 16.99 13 14.5C13 12.01 15.01 10 17.5 10C18.17 10 18.81 11.15 19.34 11.44C20.89 10.6 23 11.76 23 13.5C23 15.43 21.43 17 19.5 17H17.5M10.5 19C8.01 19 6 16.99 6 14.5C6 12.01 8.01 10 10.5 10C11.17 10 11.81 11.15 12.34 11.44C13.89 10.6 16 11.76 16 13.5C16 15.43 14.43 17 12.5 17H10.5M1 12C1 8.13 4.13 5 8 5C9.46 5 10.82 5.45 11.94 6.22C13.54 4.84 15.63 4 17.91 4C21.83 4 25 7.17 25 11.09C25 11.39 24.97 11.69 24.92 11.98" stroke="currentColor" fill="none" stroke-width="1.5"/></svg>
+                    </div>
+                    <h3 class="ti-svc-card-h3">Oracle Cloud Services</h3>
+                    <p class="ti-svc-card-p">Complete Oracle Cloud Infrastructure implementation and management services. Our Oracle solutions India clients benefit from secure, scalable, and cost-effective cloud operations.</p>
+                </div>
+
+                <div class="ti-svc-card">
+                    <div class="ti-svc-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M20 10V14M4 10V14M10 4H14M10 20H14M18 6H20V8M18 16H20V18M4 6H6V8M4 16H6V18" stroke="currentColor" stroke-width="1.5"/><rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                    <h3 class="ti-svc-card-h3">EBS Extensions with APEX</h3>
+                    <p class="ti-svc-card-p">Extend Oracle E-Business Suite functionality using custom APEX applications to improve usability, enhance reporting, and streamline workflows without disrupting core ERP systems.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

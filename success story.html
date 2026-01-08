@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories - Tavish Infotech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #DF4231 0%, #362CC0 100%);
+            --text-dark: #0f172a;
+            --text-light: #64748b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #fff; color: var(--text-dark); line-height: 1.6; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 100px 20px; }
+
+        /* --- Custom Header --- */
+        .section-intro { text-align: center; margin-bottom: 100px; }
+        .label { color: #DF4231; font-weight: 800; letter-spacing: 3px; font-size: 13px; display: block; margin-bottom: 15px; }
+        .main-h { font-size: clamp(2.5rem, 6vw, 3.5rem); font-weight: 800; letter-spacing: -2px; line-height: 1.1; }
+
+        /* --- Alternating Row Layout --- */
+        .story-row { 
+            display: flex; 
+            align-items: center; 
+            gap: 60px; 
+            margin-bottom: 120px;
+            position: relative;
+        }
+
+        /* Reverse row for every second item */
+        .story-row:nth-child(even) { flex-direction: row-reverse; }
+
+        /* Left Side: Visual/Context */
+        .story-visual { 
+            flex: 1; 
+            background: #f8fafc; 
+            padding: 50px; 
+            border-radius: 40px; 
+            position: relative;
+            border: 1px solid #f1f5f9;
+        }
+        
+        .industry-tag { 
+            position: absolute; top: -15px; left: 40px;
+            background: var(--primary-gradient); color: #fff;
+            padding: 8px 20px; border-radius: 50px; font-weight: 700; font-size: 12px;
+        }
+
+        /* Right Side: Content */
+        .story-content { flex: 1; }
+        .story-title { font-size: 2rem; font-weight: 800; margin-bottom: 20px; color: #1e293b; }
+        
+        .data-point { display: flex; gap: 15px; margin-bottom: 25px; align-items: flex-start; }
+        .dot { width: 12px; height: 12px; border-radius: 50%; background: #DF4231; margin-top: 8px; flex-shrink: 0; }
+        .data-point b { display: block; font-size: 14px; text-transform: uppercase; color: #94a3b8; margin-bottom: 4px; }
+
+        /* Impact Highlights (The Numbers) */
+        .impact-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 15px; 
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #f1f5f9;
+        }
+        .impact-box h5 { font-size: 1.8rem; font-weight: 800; color: #362CC0; margin-bottom: 5px; }
+        .impact-box span { font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; line-height: 1.2; display: block; }
+
+        /* CTA */
+        .footer-cta { text-align: center; margin-top: 50px; }
+        .btn-main { 
+            background: var(--primary-gradient); color: #fff; padding: 20px 50px; 
+            border-radius: 50px; text-decoration: none; font-weight: 800; display: inline-block;
+            transition: 0.3s; box-shadow: 0 20px 40px rgba(54, 44, 192, 0.2);
+        }
+        .btn-main:hover { transform: translateY(-5px); box-shadow: 0 30px 60px rgba(54, 44, 192, 0.3); }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .story-row, .story-row:nth-child(even) { flex-direction: column; gap: 40px; }
+            .story-visual { width: 100%; padding: 30px; }
+            .main-h { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="section-intro">
+            <span class="label">SUCCESS STORIES</span>
+            <h1 class="main-h">Real Impact. Real Results.</h1>
+        </header>
+
+        <div class="story-row">
+            <div class="story-visual">
+                <span class="industry-tag">INDIA | GOVERNMENT</span>
+                <div class="impact-grid">
+                    <div class="impact-box"><h5>99.9%</h5><span>Uptime Rate</span></div>
+                    <div class="impact-box"><h5>65%</h5><span>Processing Speed</span></div>
+                    <div class="impact-box"><h5>2M+</h5><span>Citizens Monthly</span></div>
+                </div>
+            </div>
+            <div class="story-content">
+                <h2 class="story-title">Government e-Governance Platform</h2>
+                <div class="data-point">
+                    <div class="dot"></div>
+                    <div><b>The Challenge</b>Legacy system managing 50,000+ daily transactions with frequent downtime and security risks.</div>
+                </div>
+                <div class="data-point">
+                    <div class="dot" style="background: #362CC0;"></div>
+                    <div><b>Our AI Solution</b>AI-powered Oracle APEX platform with intelligent routing and automated citizen workflows.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="story-row">
+            <div class="story-visual">
+                <span class="industry-tag">UAE | HEALTHCARE</span>
+                <div class="impact-grid">
+                    <div class="impact-box"><h5>50%</h5><span>Faster Scheduling</span></div>
+                    <div class="impact-box"><h5>30%</h5><span>Resource Utilization</span></div>
+                    <div class="impact-box"><h5>95%</h5><span>Patient Satisfaction</span></div>
+                </div>
+            </div>
+            <div class="story-content">
+                <h2 class="story-title">Multi-Hospital Patient System</h2>
+                <div class="data-point">
+                    <div class="dot"></div>
+                    <div><b>The Challenge</b>Fragmented data across 12 facilities with manual scheduling and inefficient allocation.</div>
+                </div>
+                <div class="data-point">
+                    <div class="dot" style="background: #362CC0;"></div>
+                    <div><b>Our AI Solution</b>Integrated Oracle APEX with ML-powered predictive analytics for unified resource management.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="story-row">
+            <div class="story-visual">
+                <span class="industry-tag">USA | BANKING</span>
+                <div class="impact-grid">
+                    <div class="impact-box"><h5>94%</h5><span>Detection Accuracy</span></div>
+                    <div class="impact-box"><h5>70%</h5><span>Fewer False Positives</span></div>
+                    <div class="impact-box"><h5>$2.3M</h5><span>Annual Savings</span></div>
+                </div>
+            </div>
+            <div class="story-content">
+                <h2 class="story-title">Banking Fraud Detection</h2>
+                <div class="data-point">
+                    <div class="dot"></div>
+                    <div><b>The Challenge</b>Rising fraud with traditional systems generating excessive and costly false alarms.</div>
+                </div>
+                <div class="data-point">
+                    <div class="dot" style="background: #362CC0;"></div>
+                    <div><b>Our AI Solution</b>Oracle Machine Learning integration with real-time transaction monitoring and scoring.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-cta">
+            <a href="#" class="btn-main">Start Your Success Story</a>
+        </div>
+    </div>
+
+</body>
+</html>

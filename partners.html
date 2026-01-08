@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner With Tavish Infotech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #DF4231 0%, #362CC0 100%);
+            --text-dark: #111827;
+            --text-gray: #4b5563;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #fff; color: var(--text-dark); overflow-x: hidden; }
+
+        .container { max-width: 1200px; margin: 80px auto; padding: 0 20px; }
+
+        /* --- Header --- */
+        .section-header { text-align: center; margin-bottom: 80px; }
+        .tagline { color: #DF4231; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; display: block; margin-bottom: 10px; }
+        .main-title { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 20px; background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        /* --- New Split Layout (No more simple cards) --- */
+        .partnership-layout { display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; }
+        
+        /* Left side: Trust & Stats */
+        .trust-pillar { flex: 1; min-width: 320px; background: #f9fafb; padding: 40px; border-radius: 30px; border-left: 6px solid #DF4231; }
+        .trust-pillar h3 { font-size: 1.8rem; margin-bottom: 15px; }
+        .trust-pillar p { color: var(--text-gray); font-size: 1.1rem; margin-bottom: 30px; }
+        
+        .stat-item { margin-bottom: 25px; }
+        .stat-number { font-size: 2rem; font-weight: 800; color: #362CC0; display: block; }
+        .stat-label { font-weight: 600; font-size: 1rem; color: var(--text-dark); }
+
+        /* Right side: Interactive Feature List */
+        .feature-list { flex: 1.5; min-width: 320px; }
+        
+        .feature-item { display: flex; gap: 20px; padding: 30px; border-bottom: 1px solid #eee; transition: 0.3s; }
+        .feature-item:hover { background: #fff5f4; border-radius: 15px; border-bottom-color: transparent; }
+        
+        .icon-circle { min-width: 50px; height: 50px; border-radius: 12px; background: #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; }
+        .icon-circle svg { width: 24px; height: 24px; fill: url(#grad1); }
+
+        .feature-text h4 { font-size: 1.3rem; margin-bottom: 8px; color: #111; }
+        .feature-text p { color: var(--text-gray); font-size: 0.95rem; line-height: 1.6; }
+
+        /* Bottom highlight bar for global reach */
+        .global-strip { width: 100%; background: var(--primary-gradient); border-radius: 20px; padding: 40px; color: #fff; margin-top: 50px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 30px; }
+        .global-text { flex: 2; min-width: 250px; }
+        .global-text h4 { font-size: 1.5rem; margin-bottom: 10px; }
+        .global-btn { flex: 1; text-align: right; min-width: 200px; }
+
+        .btn-white { background: #fff; color: #DF4231; padding: 18px 35px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; transition: 0.3s; }
+        .btn-white:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .partnership-layout { flex-direction: column; }
+            .global-btn { text-align: left; }
+            .main-title { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <svg style="width:0;height:0;position:absolute;">
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#DF4231;" />
+            <stop offset="100%" style="stop-color:#362CC0;" />
+        </linearGradient>
+    </svg>
+
+    <div class="container">
+        <header class="section-header">
+            <span class="tagline">PARTNER WITH TAVISH INFOTECH?</span>
+            <h2 class="main-title">Strategic Partnership for <br> Oracle APEX Success</h2>
+            <p class="supporting-line">Join leading organizations choosing India’s premier Oracle APEX development firm for scalable, secure solutions.</p>
+        </header>
+
+        <div class="partnership-layout">
+            <div class="trust-pillar">
+                <h3>Oracle Gold Partner Certification</h3>
+                <p>Solutions architected using official Oracle methodologies, ensuring compliance with global standards and future-proof technology investments.</p>
+                
+                <div class="stat-item">
+                    <span class="stat-number">60%</span>
+                    <span class="stat-label">Faster Development Cycles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">40%</span>
+                    <span class="stat-label">Reduction in TCO</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Successful Implementations</span>
+                </div>
+            </div>
+
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Government & Enterprise Proven</h4>
+                        <p>Extensive experience delivering mission-critical systems for government agencies and Fortune 500 companies across India, USA, Canada, Europe, and UAE.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3z"/></svg>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Long-Term Partnership Approach</h4>
+                        <p>We function as your extended technology team from consultation and architecture through continuous optimization—delivering maximum value.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Low-Code Specialization</h4>
+                        <p>As a dedicated Oracle APEX firm, we deliver flexible applications that adapt to your changing business needs instantly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="global-strip">
+            <div class="global-text">
+                <h4>Multi-Region Infrastructure & 24/7 Support</h4>
+                <p>Client success teams across time zones ensuring rapid response and local support for clients in India, USA, Canada, Europe, and UAE.</p>
+            </div>
+            <div class="global-btn">
+                <a href="#" class="btn-white">Schedule Partnership Discussion</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
