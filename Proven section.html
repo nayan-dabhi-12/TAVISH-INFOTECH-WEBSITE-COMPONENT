@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Strategic Process - Tavish Infotech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --process-primary: #362CC0;
+            --process-secondary: #DF4231;
+            --process-gradient: linear-gradient(135deg, #362CC0 0%, #DF4231 100%);
+            --bg-soft: #fcfcfd;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #fff; color: #1e293b; overflow-x: hidden; }
+
+        .tavish-process-section { padding: 100px 20px; background-color: var(--bg-soft); position: relative; }
+        .tavish-container { max-width: 1100px; margin: 0 auto; position: relative; }
+
+        /* --- Header --- */
+        .process-header { text-align: center; margin-bottom: 100px; }
+        .process-main-title { 
+            font-size: clamp(2.5rem, 5vw, 4rem); 
+            font-weight: 900; 
+            text-transform: uppercase; 
+            letter-spacing: -2px; 
+            background: var(--process-gradient); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .process-subtitle { font-size: 1.4rem; font-weight: 600; color: #64748b; }
+
+        /* --- The Flow Path (Central Line) --- */
+        .process-path-line {
+            position: absolute;
+            left: 50%;
+            top: 250px;
+            bottom: 100px;
+            width: 4px;
+            background: #e2e8f0;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        /* --- Step Item --- */
+        .process-step-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 80px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Alternate Positioning */
+        .process-step-item:nth-child(even) { flex-direction: row-reverse; }
+
+        .process-step-content {
+            width: 45%;
+            background: #fff;
+            padding: 40px;
+            border-radius: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid #f1f5f9;
+            transition: 0.4s ease;
+        }
+
+        .process-step-number {
+            width: 70px;
+            height: 70px;
+            background: #fff;
+            border: 4px solid #e2e8f0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--process-primary);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: 0.4s;
+            box-shadow: 0 0 0 10px var(--bg-soft);
+        }
+
+        /* Hover Styling */
+        .process-step-item:hover .process-step-content {
+            transform: translateY(-10px);
+            border-color: var(--process-secondary);
+            box-shadow: 0 20px 40px rgba(54, 44, 192, 0.1);
+        }
+
+        .process-step-item:hover .process-step-number {
+            background: var(--process-gradient);
+            color: #fff;
+            border-color: #fff;
+            transform: translateX(-50%) scale(1.15);
+        }
+
+        /* Content Details */
+        .process-step-content h3 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #0f172a;
+        }
+
+        .process-step-content p {
+            font-size: 1rem;
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        /* --- Responsive Layout --- */
+        @media (max-width: 900px) {
+            .process-path-line { left: 30px; }
+            .process-step-item, .process-step-item:nth-child(even) { 
+                flex-direction: row; 
+                justify-content: flex-start;
+                padding-left: 80px;
+            }
+            .process-step-content { width: 100%; }
+            .process-step-number { left: 30px; transform: translateX(-50%); }
+            .process-step-item:hover .process-step-number { transform: translateX(-50%) scale(1.1); }
+        }
+
+        @media (max-width: 600px) {
+            .process-main-title { font-size: 2.5rem; }
+            .process-step-content { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="tavish-process-section">
+        <div class="tavish-container">
+            
+            <header class="process-header">
+                <h2 class="process-main-title">Our Proven Process</h2>
+                <p class="process-subtitle">Systematic Methodology for Oracle Excellence</p>
+            </header>
+
+            <div class="process-path-line"></div>
+
+            <div class="process-step-item">
+                <div class="process-step-content">
+                    <h3>Discovery & Assessment</h3>
+                    <p>Comprehensive evaluation of business objectives, current infrastructure, and AI readiness. We perform a deep feasibility analysis to identify gaps and project a transparent ROI based on industry benchmarks.</p>
+                </div>
+                <div class="process-step-number">01</div>
+                <div style="width: 45%;"></div> </div>
+
+            <div class="process-step-item">
+                <div class="process-step-content">
+                    <h3>Strategy & Architecture</h3>
+                    <p>Design robust, scalable solutions integrating AI capabilities aligned with Oracle best practices. Our architects create detailed technical specifications and integration blueprints tailored to your business needs.</p>
+                </div>
+                <div class="process-step-number">02</div>
+                <div style="width: 45%;"></div> </div>
+
+            <div class="process-step-item">
+                <div class="process-step-content">
+                    <h3>Agile Development</h3>
+                    <p>Build AI-powered Oracle APEX applications using agile methodologies. Regular sprint reviews and continuous collaboration ensure the project stays flexible and high-quality at every stage.</p>
+                </div>
+                <div class="process-step-number">03</div>
+                <div style="width: 45%;"></div> </div>
+
+            <div class="process-step-item">
+                <div class="process-step-content">
+                    <h3>Testing & Optimization</h3>
+                    <p>Rigorous testing for performance, security, and scalability. We optimize every query and AI model to ensure lightning-fast response times and a seamless user experience across all devices.</p>
+                </div>
+                <div class="process-step-number">04</div>
+                <div style="width: 45%;"></div> </div>
+
+            <div class="process-step-item">
+                <div class="process-step-content">
+                    <h3>Deployment & Support</h3>
+                    <p>Orchestrated deployment with on-site go-live support and training. Followed by 24/7 ongoing support and continuous optimization to maximize your long-term business value.</p>
+                </div>
+                <div class="process-step-number">05</div>
+                <div style="width: 45%;"></div> </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
