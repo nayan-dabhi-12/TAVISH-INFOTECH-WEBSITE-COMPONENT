@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle Success Stories - Tavish</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-grad: linear-gradient(135deg, #362CC0 0%, #DF4231 100%);
+            --dark-navy: #0f172a;
+            --soft-text: #475569;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #fff; }
+
+        /* Background Pattern matching your images */
+        .portfolio-section {
+            padding: 100px 20px;
+            background-color: #fcfcfd;
+            background-image: radial-gradient(#e2e8f0 0.8px, transparent 0.8px);
+            background-size: 30px 30px;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; text-align: center; }
+
+        /* --- Heading & Subheading (Matching your previous sections) --- */
+        .main-headline {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            background: var(--primary-grad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .sub-headline {
+            font-size: 1.2rem;
+            color: var(--soft-text);
+            max-width: 800px;
+            margin: 0 auto 60px auto;
+            font-weight: 500;
+        }
+
+        /* --- Modern Case Study Grid --- */
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            text-align: left;
+        }
+
+        .case-card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 40px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 400px;
+        }
+
+        .case-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(54, 44, 192, 0.1);
+            border-color: #cbd5e1;
+        }
+
+        .industry-badge {
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: #362CC0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .case-card h3 {
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: var(--dark-navy);
+            margin-bottom: 25px;
+        }
+
+        .content-wrap { margin-bottom: 30px; }
+        
+        .info-row { margin-bottom: 15px; }
+        .info-row b { display: block; font-size: 0.85rem; color: #94a3b8; text-transform: uppercase; margin-bottom: 4px; }
+        .info-row p { font-size: 1.05rem; color: var(--soft-text); font-weight: 500; }
+
+        /* --- Stats Row (Premium Glow Pills) --- */
+        .stats-wrapper {
+            display: flex;
+            gap: 15px;
+            padding-top: 25px;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .stat-pill {
+            flex: 1;
+            padding: 12px;
+            background: #f8fafc;
+            border-radius: 18px;
+            text-align: center;
+            border: 1px solid transparent;
+            transition: 0.3s;
+        }
+
+        .case-card:hover .stat-pill {
+            background: #fff;
+            border-color: #e2e8f0;
+        }
+
+        .stat-pill b {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: #DF4231; /* Using your accent color */
+        }
+
+        .stat-pill span {
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: #64748b;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 900px) {
+            .case-grid { grid-template-columns: 1fr; }
+            .main-headline { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="portfolio-section">
+    <div class="container">
+        
+        <h2 class="main-headline">Success Stories: AI-Powered Oracle Transformations</h2>
+        <p class="sub-headline">Trusted Oracle Solutions India and Global Leaders Depend On</p>
+
+        <div class="case-grid">
+            
+            <div class="case-card">
+                <div>
+                    <span class="industry-badge">Government</span>
+                    <h3>e-Governance Platform</h3>
+                    <div class="content-wrap">
+                        <div class="info-row"><b>Challenge</b> <p>Legacy system with 50,000+ daily transactions & downtime.</p></div>
+                        <div class="info-row"><b>Solution</b> <p>AI-powered Oracle APEX with intelligent routing.</p></div>
+                    </div>
+                </div>
+                <div class="stats-wrapper">
+                    <div class="stat-pill"><b>99.9%</b><span>Uptime</span></div>
+                    <div class="stat-pill"><b>65%</b><span>Faster</span></div>
+                    <div class="stat-pill"><b>40%</b><span>Cost ↓</span></div>
+                </div>
+            </div>
+
+            <div class="case-card">
+                <div>
+                    <span class="industry-badge">Healthcare</span>
+                    <h3>Patient Management</h3>
+                    <div class="content-wrap">
+                        <div class="info-row"><b>Challenge</b> <p>Fragmented patient data and manual scheduling.</p></div>
+                        <div class="info-row"><b>Solution</b> <p>Integrated APEX with ML-powered predictive analytics.</p></div>
+                    </div>
+                </div>
+                <div class="stats-wrapper">
+                    <div class="stat-pill"><b>12</b><span>Clinics</span></div>
+                    <div class="stat-pill"><b>50%</b><span>Speed ↑</span></div>
+                    <div class="stat-pill"><b>30%</b><span>ROI</span></div>
+                </div>
+            </div>
+
+            <div class="case-card">
+                <div>
+                    <span class="industry-badge">Banking</span>
+                    <h3>Fraud Detection</h3>
+                    <div class="content-wrap">
+                        <div class="info-row"><b>Challenge</b> <p>Increasing fraud with traditional detection methods.</p></div>
+                        <div class="info-row"><b>Solution</b> <p>Oracle machine learning with real-time monitoring.</p></div>
+                    </div>
+                </div>
+                <div class="stats-wrapper">
+                    <div class="stat-pill"><b>94%</b><span>Accuracy</span></div>
+                    <div class="stat-pill"><b>70%</b><span>Fewer FP</span></div>
+                    <div class="stat-pill"><b>$2.3M</b><span>Saved</span></div>
+                </div>
+            </div>
+
+            <div class="case-card">
+                <div>
+                    <span class="industry-badge">Manufacturing</span>
+                    <h3>Predictive Maintenance</h3>
+                    <div class="content-wrap">
+                        <div class="info-row"><b>Challenge</b> <p>Unexpected equipment failures causing delays.</p></div>
+                        <div class="info-row"><b>Solution</b> <p>IoT-enabled APEX with ML predictions.</p></div>
+                    </div>
+                </div>
+                <div class="stats-wrapper">
+                    <div class="stat-pill"><b>45%</b><span>Downtime ↓</span></div>
+                    <div class="stat-pill"><b>35%</b><span>Cost ↓</span></div>
+                    <div class="stat-pill"><b>8M</b><span>ROI</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
