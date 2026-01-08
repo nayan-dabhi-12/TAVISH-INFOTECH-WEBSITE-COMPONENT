@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries We Serve - Light Modern Design</title>
+    <style>
+        :root {
+            --ind-red: #DF4231;
+            --ind-blue: #362CC0;
+            --ind-bg: #fdfdfe; /* Light background */
+            --ind-text: #1e293b;
+            --ind-muted: #64748b;
+        }
+
+        .ind-section {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--ind-bg);
+            padding: 100px 5%;
+            color: var(--ind-text);
+            position: relative;
+        }
+
+        .ind-container {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+        /* --- Updated Header with Gradient --- */
+        .ind-header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .ind-badge {
+            display: inline-block;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--ind-red);
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        .ind-header h2 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin: 0;
+            background: linear-gradient(90deg, var(--ind-blue) 0%, var(--ind-red) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.1;
+        }
+
+        .ind-header p {
+            font-size: 1.2rem;
+            color: var(--ind-muted);
+            max-width: 800px;
+            margin: 20px auto 0;
+            font-weight: 500;
+        }
+
+        /* --- Industry Grid --- */
+        .ind-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .ind-card {
+            background: #ffffff;
+            padding: 45px;
+            border-radius: 35px;
+            border: 1px solid #edf2f7;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            overflow: hidden;
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            box-shadow: 0 10px 30px rgba(54, 44, 192, 0.03);
+        }
+
+        .ind-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(54, 44, 192, 0.2);
+            box-shadow: 0 25px 50px rgba(54, 44, 192, 0.08);
+        }
+
+        /* Border Accent on Hover */
+        .ind-card::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; width: 6px; height: 0%;
+            background: linear-gradient(to bottom, var(--ind-blue), var(--ind-red));
+            transition: height 0.4s ease;
+        }
+
+        .ind-card:hover::before { height: 100%; }
+
+        /* Icon Styling */
+        .ind-icon-box {
+            flex-shrink: 0;
+            width: 65px;
+            height: 65px;
+            background: #f8faff;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+
+        .ind-card:hover .ind-icon-box {
+            background: var(--ind-blue);
+        }
+
+        .ind-card:nth-child(even):hover .ind-icon-box {
+            background: var(--ind-red);
+        }
+
+        .ind-icon-box svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--ind-blue);
+            transition: 0.3s;
+        }
+
+        .ind-card:nth-child(even) .ind-icon-box svg { fill: var(--ind-red); }
+        .ind-card:hover .ind-icon-box svg { fill: #fff; }
+
+        /* Content Styling */
+        .ind-info h3 {
+            font-size: 1.6rem;
+            margin: 0 0 12px 0;
+            color: #111827;
+            font-weight: 700;
+        }
+
+        .ind-info p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--ind-muted);
+            margin: 0;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 992px) {
+            .ind-grid { grid-template-columns: 1fr; }
+            .ind-header h2 { font-size: 2.8rem; }
+            .ind-card { padding: 35px; }
+        }
+
+        @media (max-width: 600px) {
+            .ind-card { flex-direction: column; gap: 20px; }
+            .ind-header h2 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="ind-section">
+    <div class="ind-container">
+        
+        <div class="ind-header">
+            <span class="ind-badge">INDIA • USA • CANADA • EUROPE • UAE</span>
+            <h2>Specialized Oracle Solutions Across Key Industries</h2>
+            <p>Our Oracle APEX development firm delivers industry-specific solutions worldwide, ensuring global compliance and local impact.</p>
+        </div>
+
+        <div class="ind-grid">
+            
+            <div class="ind-card">
+                <div class="ind-icon-box">
+                    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 6c1.4 0 2.5 1.1 2.5 2.5S13.4 12 12 12s-2.5-1.1-2.5-2.5S10.6 7 12 7zm0 12c-2.7 0-5.8-1.3-5.8-1.3 0-2 4-3.1 5.8-3.1s5.8 1.1 5.8 3.1c0 0-3.1 1.3-5.8 1.3z"/></svg>
+                </div>
+                <div class="ind-info">
+                    <h3>Government & Public Sector</h3>
+                    <p>Secure, compliant Oracle solutions with proven expertise in e-governance platforms, citizen portals, and intelligent workflow automation for government agencies nationwide.</p>
+                </div>
+            </div>
+
+            <div class="ind-card">
+                <div class="ind-icon-box">
+                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+                </div>
+                <div class="ind-info">
+                    <h3>Healthcare & Medical Services</h3>
+                    <p>AI-powered patient management systems, EMR systems, and HIPAA-compliant solutions that improve patient care and operational efficiency across multi-facility networks.</p>
+                </div>
+            </div>
+
+            <div class="ind-card">
+                <div class="ind-icon-box">
+                    <svg viewBox="0 0 24 24"><path d="M11.8 2.1L3 6.6V18c0 .5.5 1 1 1h16c.5 0 1-.5 1-1V6.6l-8.8-4.5c-.2-.1-.4-.1-.4 0zM12 4.1l6 3.1v1.6H6V7.2l6-3.1zM6 17v-6h2v6H6zm5 0v-6h2v6h-2zm5 0v-6h2v6h-2z"/></svg>
+                </div>
+                <div class="ind-info">
+                    <h3>Financial Services & Banking</h3>
+                    <p>Core banking systems, AI-driven fraud detection, credit risk analysis, and secure payment processing solutions meeting stringent financial industry standards.</p>
+                </div>
+            </div>
+
+            <div class="ind-card">
+                <div class="ind-icon-box">
+                    <svg viewBox="0 0 24 24"><path d="M22 10V3.5c0-.3-.3-.5-.5-.5H18c-.3 0-.5.2-.5.5V7h-3V3.5c0-.3-.3-.5-.5-.5H11c-.3 0-.5.2-.5.5V7h-3V3.5c0-.3-.3-.5-.5-.5H4c-.3 0-.5.2-.5.5V10l-2 3v7c0 .5.5 1 1 1h18c.5 0 1-.5 1-1v-7l-1-3z"/></svg>
+                </div>
+                <div class="ind-info">
+                    <h3>Manufacturing & Industrial</h3>
+                    <p>Production planning optimization, IoT-enabled predictive maintenance, quality control automation, and real-time analytics that maximize operational efficiency.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
