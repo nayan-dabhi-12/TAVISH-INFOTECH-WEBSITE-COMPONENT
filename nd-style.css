@@ -1,0 +1,1630 @@
+/* --------------------------------- Hero Section CSS Start ---------------------------------------- */
+:root {
+    --primary-grad: linear-gradient(135deg, #362CC0 0%, #DF4231 100%);
+    --navy-text: #1a1f36;
+    --soft-grey: #4f566b;
+}
+
+.hero-oracle-wrapper {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/tavish_infotech/testing/Mask\ group\ \(1\)\ copy.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Parallax effect for premium feel */
+    overflow: hidden;
+}
+
+/* Subtle Overlay to enhance text readability without making it dark */
+.hero-oracle-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* background: linear-gradient(to right, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.2) 100%); */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.9) -70%, rgba(255, 255, 255, 0.2) 100%);
+    z-index: 1;
+}
+
+.hero-inner-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Floating Badge */
+.hero-status-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: #362CC0;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(54, 44, 192, 0.1);
+}
+
+/* High Impact Headline */
+.hero-title-main {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 800;
+    color: var(--navy-text);
+    line-height: 1.15;
+    margin-bottom: 25px;
+    letter-spacing: -1.5px;
+}
+
+.hero-title-main span {
+    background: var(--primary-grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+/* Clean Sub-text */
+.hero-subtitle-p {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    color: #fff;
+    max-width: 750px;
+    margin: 0 auto 45px auto;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* CTA Button with Glow */
+.hero-main-cta {
+    display: inline-block;
+    padding: 20px 45px;
+    background: var(--primary-grad);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(54, 44, 192, 0.3);
+}
+
+.hero-main-cta:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(223, 66, 49, 0.4);
+}
+
+/* Modern Trust Bar */
+.hero-partners-strip {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.partner-metric {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--navy-text);
+}
+
+.partner-metric svg {
+    width: 18px;
+    height: 18px;
+    color: #362CC0;
+}
+
+@media (max-width: 768px) {
+    .hero-partners-strip {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-title-main {
+        font-size: 2.2rem;
+    }
+}
+
+/* --------------------------------- Hero Section CSS End ---------------------------------------- */
+
+
+
+
+/* --------------------------------- Services Section CSS Start ---------------------------------------- */
+
+:root {
+    --primary-red: #DF4231;
+    --primary-blue: #362CC0;
+    --soft-bg: #f8fafc;
+}
+
+.os-section {
+    padding: 100px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* --- Updated Heading & Subheading Design --- */
+.os-header {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.os-header h2 {
+    font-size: 4.5rem;
+    /* Badi aur bold heading */
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    /* Gradient Effect Using Your Colors */
+    background: linear-gradient(90deg, var(--primary-blue) 0%, var(--primary-red) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+}
+
+.os-sub-wrapper {
+    display: inline-block;
+    margin-top: 15px;
+    position: relative;
+}
+
+.os-header p {
+    color: #475569;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Subheading ke niche ek stylish line divider */
+.os-header p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--primary-red);
+    border-radius: 10px;
+}
+
+.os-desc-text {
+    display: block;
+    margin-top: 20px;
+    color: #64748b;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- End Heading Design --- */
+
+.os-main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: #e2e8f0;
+    border: 1px solid #e2e8f0;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+}
+
+.os-grid-item {
+    background: white;
+    padding: 50px 40px;
+    position: relative;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.os-grid-item:hover {
+    z-index: 2;
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgba(54, 44, 192, 0.1);
+}
+
+.os-grid-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--primary-blue);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    transform-origin: left;
+}
+
+.os-grid-item:nth-child(even)::before {
+    background: var(--primary-red);
+}
+
+.os-grid-item:hover::before {
+    transform: scaleX(1);
+}
+
+.os-icon-wrap {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 25px;
+}
+
+.os-icon-wrap svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--primary-blue);
+    opacity: 0.8;
+}
+
+.os-grid-item:nth-child(even) .os-icon-wrap svg {
+    fill: var(--primary-red);
+}
+
+.os-grid-item h3 {
+    font-size: 1.4rem;
+    color: #1e293b;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.os-grid-item p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.os-tag {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-blue);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.os-grid-item:nth-child(even) .os-tag {
+    color: var(--primary-red);
+}
+
+.span-2 {
+    grid-column: span 2;
+    background: #fff;
+}
+
+@media (max-width: 1100px) {
+    .os-main-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .span-2 {
+        grid-column: span 1;
+    }
+
+    .os-header h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .os-main-grid {
+        grid-template-columns: 1fr;
+        border-radius: 20px;
+    }
+
+    .os-header h2 {
+        font-size: 2.8rem;
+    }
+
+    .os-header p {
+        font-size: 1.1rem;
+    }
+}
+
+/* --------------------------------- Services Section CSS End ---------------------------------------- */
+
+
+
+
+
+/* ---------------------------------- Industries we are serve Section Start --------------------------- */
+
+:root {
+    --ind-red: #DF4231;
+    --ind-blue: #362CC0;
+    --ind-bg: #fdfdfe;
+    /* Light background */
+    --ind-text: #1e293b;
+    --ind-muted: #64748b;
+}
+
+.ind-section {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--ind-bg);
+    padding: 100px 5%;
+    color: var(--ind-text);
+    position: relative;
+}
+
+.ind-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* --- Updated Header with Gradient --- */
+.ind-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.ind-badge {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--ind-red);
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.ind-header h2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin: 0;
+    background: linear-gradient(90deg, var(--ind-blue) 0%, var(--ind-red) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+}
+
+.ind-header p {
+    font-size: 1.2rem;
+    color: var(--ind-muted);
+    max-width: 800px;
+    margin: 20px auto 0;
+    font-weight: 500;
+}
+
+/* --- Industry Grid --- */
+.ind-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.ind-card {
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 35px;
+    border: 1px solid #edf2f7;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    overflow: hidden;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    box-shadow: 0 10px 30px rgba(54, 44, 192, 0.03);
+}
+
+.ind-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(54, 44, 192, 0.2);
+    box-shadow: 0 25px 50px rgba(54, 44, 192, 0.08);
+}
+
+/* Border Accent on Hover */
+.ind-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 0%;
+    background: linear-gradient(to bottom, var(--ind-blue), var(--ind-red));
+    transition: height 0.4s ease;
+}
+
+.ind-card:hover::before {
+    height: 100%;
+}
+
+/* Icon Styling */
+.ind-icon-box {
+    flex-shrink: 0;
+    width: 65px;
+    height: 65px;
+    background: #f8faff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.ind-card:hover .ind-icon-box {
+    background: var(--ind-blue);
+}
+
+.ind-card:nth-child(even):hover .ind-icon-box {
+    background: var(--ind-red);
+}
+
+.ind-icon-box svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--ind-blue);
+    transition: 0.3s;
+}
+
+.ind-card:nth-child(even) .ind-icon-box svg {
+    fill: var(--ind-red);
+}
+
+.ind-card:hover .ind-icon-box svg {
+    fill: #fff;
+}
+
+/* Content Styling */
+.ind-info h3 {
+    font-size: 1.6rem;
+    margin: 0 0 12px 0;
+    color: #111827;
+    font-weight: 700;
+}
+
+.ind-info p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--ind-muted);
+    margin: 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .ind-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ind-header h2 {
+        font-size: 2.8rem;
+    }
+
+    .ind-card {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .ind-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ind-header h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* ---------------------------------- Industries we are serve Section End --------------------------- */
+
+
+
+
+
+
+/* ---------------------------------- Why choose us Tavish Infotech Section Start --------------------------- */
+
+:root {
+    --primary-red: #DF4231;
+    --primary-blue: #362CC0;
+    --primary-gradient: linear-gradient(90deg, var(--primary-blue) 0%, var(--primary-red) 100%);
+    --text-dark: #1a1a1a;
+    --text-gray: #64748b;
+}
+
+.section-wrapper {
+    max-width: 1250px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+/* --- CORRECTED HEADER HIERARCHY --- */
+.section-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* MAIN HEADING - Ab ye sabse bada hai */
+.main-headline {
+    font-size: 5rem;
+    /* Massive Size for Impact */
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 15px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+}
+
+/* SUBHEADING - Heading se chota aur elegant */
+.sub-headline {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1e293b;
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+    opacity: 0.85;
+}
+
+/* Content Layout */
+.content-container {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.description-content h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #111;
+    line-height: 1.2;
+}
+
+.description-content p {
+    margin-bottom: 25px;
+    color: var(--text-gray);
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+/* Cards Grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 30px;
+    border: 1px solid #f1f5f9;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(54, 44, 192, 0.2);
+    box-shadow: 0 30px 60px rgba(54, 44, 192, 0.1);
+}
+
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.icon-svg {
+    fill: var(--primary-blue);
+    width: 100%;
+    height: 100%;
+}
+
+.card:nth-child(even) .icon-svg {
+    fill: var(--primary-red);
+}
+
+.card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 22px 50px;
+    margin-top: 15px;
+    background: var(--primary-gradient);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 100px;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(223, 66, 49, 0.2);
+    font-size: 1.1rem;
+}
+
+.btn-cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(54, 44, 192, 0.3);
+}
+
+@media (max-width: 1024px) {
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+
+    .main-headline {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-headline {
+        font-size: 2.8rem;
+    }
+
+    .sub-headline {
+        font-size: 1.4rem;
+    }
+}
+
+/* ---------------------------------- Why choose us Tavish Infotech Section End --------------------------- */
+
+
+
+
+
+/* ---------------------------------- Partners with Tavish Infotech Section Start --------------------------- */
+
+:root {
+    --primary-gradient: linear-gradient(135deg, #362CC0 0%, #DF4231 100%);
+    --text-dark: #111827;
+    --text-gray: #4b5563;
+}
+
+
+/* --- UPDATED HEADER ONLY --- */
+.section-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.main-title {
+    font-size: 5rem;
+    /* Largest Element */
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 15px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+}
+
+.sub-headline {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1e293b;
+    letter-spacing: -0.5px;
+    opacity: 0.85;
+    margin-bottom: 0;
+}
+
+/* --- REST OF THE LAYOUT (KEPT AS PER YOUR ORIGINAL) --- */
+.partnership-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.trust-pillar {
+    flex: 1;
+    min-width: 320px;
+    background: #f9fafb;
+    padding: 40px;
+    border-radius: 30px;
+    border-left: 6px solid #DF4231;
+}
+
+.trust-pillar h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.trust-pillar p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.stat-item {
+    margin-bottom: 25px;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #362CC0;
+    display: block;
+}
+
+.stat-label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.feature-list {
+    flex: 1.5;
+    min-width: 320px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    border-bottom: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.feature-item:hover {
+    background: #fff5f4;
+    border-radius: 15px;
+    border-bottom-color: transparent;
+}
+
+.icon-circle {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle svg {
+    width: 24px;
+    height: 24px;
+    fill: url(#grad1);
+}
+
+.feature-text h4 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.feature-text p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.global-strip {
+    width: 100%;
+    background: var(--primary-gradient);
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.global-text {
+    flex: 2;
+    min-width: 250px;
+}
+
+.global-text h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.global-btn {
+    flex: 1;
+    text-align: right;
+    min-width: 200px;
+}
+
+.btn-white {
+    background: #fff;
+    color: #DF4231;
+    padding: 18px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-white:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .partnership-layout {
+        flex-direction: column;
+    }
+
+    .global-btn {
+        text-align: left;
+    }
+
+    .main-title {
+        font-size: 2.8rem;
+        letter-spacing: -1.5px;
+    }
+
+    .sub-headline {
+        font-size: 1.4rem;
+    }
+}
+
+/* ---------------------------------- Partners with Tavish Infotech Section End --------------------------- */
+
+
+
+
+/* ---------------------------------- Case Studies/ Portfolio Section Start --------------------------- */
+
+:root {
+    --primary-gradient: linear-gradient(135deg, #362CC0 0%, #DF4231 100%);
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+}
+
+/* --- UPDATED HEADER (As per your request) --- */
+.section-intro {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* Main Heading - Large and Bold */
+.main-h {
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: -3px;
+    line-height: 1;
+    margin-bottom: 15px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+/* Subheading - Smaller and Elegant */
+.sub-h {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1e293b;
+    letter-spacing: -0.5px;
+    opacity: 0.85;
+}
+
+/* --- Alternating Row Layout --- */
+.story-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 120px;
+    position: relative;
+    transition: all 0.4s ease;
+    /* Hover transition */
+    padding: 20px;
+    border-radius: 40px;
+}
+
+/* --- HOVER EFFECT --- */
+.story-row:hover {
+    transform: translateY(-10px);
+}
+
+.story-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.story-visual {
+    flex: 1;
+    background: #f8fafc;
+    padding: 50px;
+    border-radius: 40px;
+    position: relative;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.4s ease;
+}
+
+.story-row:hover .story-visual {
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+    border-color: #e2e8f0;
+}
+
+.industry-tag {
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    background: var(--primary-gradient);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.story-content {
+    flex: 1;
+}
+
+.story-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+.data-point {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #DF4231;
+    margin-top: 8px;
+    flex-shrink: 0;
+}
+
+.data-point b {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 4px;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #f1f5f9;
+}
+
+.impact-box h5 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #362CC0;
+    margin-bottom: 5px;
+}
+
+.impact-box span {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    line-height: 1.2;
+    display: block;
+}
+
+.footer-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-main {
+    background: var(--primary-gradient);
+    color: #fff;
+    padding: 20px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 800;
+    display: inline-block;
+    transition: 0.3s;
+    box-shadow: 0 20px 40px rgba(54, 44, 192, 0.2);
+}
+
+.btn-main:hover {
+    transform: scale(1.05);
+    box-shadow: 0 30px 60px rgba(54, 44, 192, 0.3);
+}
+
+@media (max-width: 900px) {
+
+    .story-row,
+    .story-row:nth-child(even) {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .story-visual {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .main-h {
+        font-size: 3rem;
+        letter-spacing: -1.5px;
+    }
+
+    .sub-h {
+        font-size: 1.4rem;
+    }
+}
+
+/* ---------------------------------- Case Studies/ Portfolio Section End --------------------------- */
+
+
+
+
+/* ---------------------------------- Client- Testimonials Section Start --------------------------- */
+
+:root {
+    --primary-gradient: linear-gradient(135deg, #362CC0 0%, #DF4231 100%);
+    --dark-navy: #0f172a;
+    --star-gold: #FFC107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    color: var(--dark-navy);
+}
+
+.t-section {
+    padding: 100px 0;
+    background: #fcfcfd;
+    position: relative;
+}
+
+/* --- Header (Consistent Style) --- */
+.section-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.main-h {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    letter-spacing: -2px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.sub-h {
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Testimonial Card --- */
+.t-card {
+    display: flex;
+    background: #fff;
+    border-radius: 45px;
+    overflow: hidden;
+    box-shadow: 0 35px 70px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f1f5f9;
+    min-height: 500px;
+}
+
+/* Left Side Panel */
+.t-side-info {
+    width: 38%;
+    background: var(--primary-gradient);
+    padding: 60px 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.t-icon-box {
+    width: 95px;
+    height: 95px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.t-icon-box svg {
+    width: 48px;
+    height: 48px;
+    fill: white;
+}
+
+.t-side-info h4 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.t-side-info p {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+/* Right Content Panel */
+.t-main-content {
+    width: 62%;
+    padding: 75px 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* STARS: Bold & Clear */
+.t-stars {
+    color: var(--star-gold);
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+}
+
+.t-quote {
+    font-size: 1.45rem;
+    line-height: 1.8;
+    color: #334155;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.t-tag {
+    align-self: flex-start;
+    padding: 10px 24px;
+    background: #f1f5f9;
+    border-radius: 100px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #362CC0;
+    text-transform: uppercase;
+    border: 1px solid #e2e8f0;
+}
+
+/* --- PAGINATION: Fixed Dots (No Background) --- */
+.swiper-pagination {
+    position: relative !important;
+    margin-top: 50px !important;
+    bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #cbd5e1;
+    opacity: 1;
+    margin: 0 8px !important;
+    transition: all 0.4s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primary-gradient) !important;
+    width: 40px !important;
+    border-radius: 20px !important;
+}
+
+/* Responsive Fix */
+@media (max-width: 991px) {
+    .t-card {
+        flex-direction: column;
+        border-radius: 35px;
+    }
+
+    .t-side-info,
+    .t-main-content {
+        width: 100%;
+        padding: 45px 35px;
+    }
+
+    .t-side-info {
+        min-height: 250px;
+    }
+
+    .t-quote {
+        font-size: 1.2rem;
+    }
+}
+
+/* ---------------------------------- Client- Testimonials Section End --------------------------- */
+
+
+
+
+
+/* ---------------------------------- Our Proven Proccess Section Start --------------------------- */
+
+:root {
+    --process-primary: #362CC0;
+    --process-secondary: #DF4231;
+    --process-gradient: linear-gradient(135deg, #362CC0 0%, #DF4231 100%);
+    --bg-soft: #fcfcfd;
+}
+
+.tavish-process-section {
+    padding: 100px 20px;
+    background-color: var(--bg-soft);
+    position: relative;
+}
+
+.tavish-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* --- Header --- */
+.process-header {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.process-main-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    background: var(--process-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.process-subtitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #64748b;
+}
+
+/* --- The Flow Path (Central Line) --- */
+.process-path-line {
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    bottom: 100px;
+    width: 4px;
+    background: #e2e8f0;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* --- Step Item --- */
+.process-step-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Alternate Positioning */
+.process-step-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.process-step-content {
+    width: 45%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    transition: 0.4s ease;
+}
+
+.process-step-number {
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border: 4px solid #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--process-primary);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s;
+    box-shadow: 0 0 0 10px var(--bg-soft);
+}
+
+/* Hover Styling */
+.process-step-item:hover .process-step-content {
+    transform: translateY(-10px);
+    border-color: var(--process-secondary);
+    box-shadow: 0 20px 40px rgba(54, 44, 192, 0.1);
+}
+
+.process-step-item:hover .process-step-number {
+    background: var(--process-gradient);
+    color: #fff;
+    border-color: #fff;
+    transform: translateX(-50%) scale(1.15);
+}
+
+/* Content Details */
+.process-step-content h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.process-step-content p {
+    font-size: 1rem;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 900px) {
+    .process-path-line {
+        left: 30px;
+    }
+
+    .process-step-item,
+    .process-step-item:nth-child(even) {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 80px;
+    }
+
+    .process-step-content {
+        width: 100%;
+    }
+
+    .process-step-number {
+        left: 30px;
+        transform: translateX(-50%);
+    }
+
+    .process-step-item:hover .process-step-number {
+        transform: translateX(-50%) scale(1.1);
+    }
+}
+
+@media (max-width: 600px) {
+    .process-main-title {
+        font-size: 2.5rem;
+    }
+
+    .process-step-content {
+        padding: 30px;
+    }
+}
+
+/* ---------------------------------- Our Proven Proccess Section End --------------------------- */
+
+
+
+
+/* ---------------------------------- Call to Action Section Start --------------------------- */
+
+/* --- Unique Scoped CSS --- */
+.tavish-cta-wrapper {
+    background: linear-gradient(135deg, #DF4231 0%, #362CC0 100%);
+    padding: 100px 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+.tavish-cta-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+.tavish-cta-h2 {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #ffffff !important;
+}
+
+.tavish-cta-p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 850px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+/* --- Buttons with Unique Classes --- */
+.tavish-cta-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+/* Primary Button */
+.tavish-btn-main {
+    background: #ffffff !important;
+    color: #DF4231 !important;
+    /* Visible Red text */
+    padding: 18px 35px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.tavish-btn-main:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    background: #f9f9f9 !important;
+}
+
+/* Secondary Button */
+.tavish-btn-outline {
+    background: transparent !important;
+    color: #ffffff !important;
+    padding: 18px 35px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid #ffffff !important;
+}
+
+.tavish-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    transform: translateY(-5px);
+}
+
+/* Tertiary Link */
+.tavish-btn-link {
+    background: transparent !important;
+    color: #ffffff !important;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none !important;
+}
+
+.tavish-btn-link:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* --- Trust Row --- */
+.tavish-trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tavish-trust-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.tavish-trust-item svg {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+}
+
+/* Responsive Fixes */
+@media (max-width: 900px) {
+    .tavish-trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .tavish-cta-button-group {
+        flex-direction: column;
+    }
+
+    .tavish-trust-grid {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .tavish-trust-item {
+        justify-content: flex-start;
+    }
+}
+
+/* ---------------------------------- Call to Action Section End --------------------------- */
