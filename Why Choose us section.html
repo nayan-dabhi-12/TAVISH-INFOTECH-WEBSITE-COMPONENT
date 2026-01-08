@@ -3,91 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tavish Infotech - Why Choose Us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>Tavish Infotech - Re-Designed Header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-gradient: linear-gradient(135deg, #DF4231 0%, #362CC0 100%);
+            --primary-red: #DF4231;
+            --primary-blue: #362CC0;
+            --primary-gradient: linear-gradient(90deg, var(--primary-blue) 0%, var(--primary-red) 100%);
             --text-dark: #1a1a1a;
-            --text-gray: #555555;
-            --bg-light: #ffffff;
-            --card-bg: #fdfdfd;
-            --transition: all 0.3s ease;
+            --text-gray: #64748b;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--bg-light);
+            background-color: #ffffff;
             color: var(--text-dark);
-            line-height: 1.6;
         }
 
         .section-wrapper {
-            max-width: 1200px;
+            max-width: 1250px;
             margin: 80px auto;
             padding: 0 20px;
         }
 
-        /* --- HIGHLIGHTED QUESTION HEADER --- */
+        /* --- CORRECTED HEADER HIERARCHY --- */
         .section-header {
             text-align: center;
-            margin-bottom: 70px;
+            margin-bottom: 80px;
         }
 
-        /* Ab ye sirf badge nahi, ek bold question hai */
-        .question-heading {
-            font-size: 1.2rem;
-            font-weight: 800;
-            color: #DF4231;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 10px;
-            display: block;
-        }
-
+        /* MAIN HEADING - Ab ye sabse bada hai */
         .main-headline {
-            font-size: 3.8rem; /* Zyada impact ke liye bada kiya */
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 25px;
+            font-size: 5rem; /* Massive Size for Impact */
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 15px;
             background: var(--primary-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            display: inline-block;
+            letter-spacing: -3px;
+            text-transform: uppercase;
         }
 
-        .intro-text {
-            font-size: 1.2rem;
-            color: var(--text-gray);
-            max-width: 850px;
-            margin: 0 auto;
-            font-weight: 500;
+        /* SUBHEADING - Heading se chota aur elegant */
+        .sub-headline {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1e293b;
+            letter-spacing: -0.5px;
+            margin-bottom: 0;
+            opacity: 0.85;
         }
 
-        /* --- CONTENT LAYOUT --- */
+        /* Content Layout */
         .content-container {
             display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 60px;
-            align-items: center;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 70px;
+            align-items: start;
         }
 
         .description-content h3 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #222;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            color: #111;
+            line-height: 1.2;
         }
 
         .description-content p {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             color: var(--text-gray);
-            font-size: 1.05rem;
+            font-size: 1.15rem;
+            line-height: 1.8;
         }
 
-        /* --- CARDS GRID --- */
+        /* Cards Grid */
         .cards-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -95,37 +88,37 @@
         }
 
         .card {
-            background: var(--card-bg);
-            padding: 35px 30px;
-            border-radius: 24px;
-            border: 1px solid #f0f0f0;
-            transition: var(--transition);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 30px;
+            border: 1px solid #f1f5f9;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
         }
 
         .card:hover {
-            transform: translateY(-12px);
-            background: #fff;
-            border-color: rgba(223, 66, 49, 0.3);
-            box-shadow: 0 25px 50px rgba(54, 44, 192, 0.12);
+            transform: translateY(-10px);
+            border-color: rgba(54, 44, 192, 0.2);
+            box-shadow: 0 30px 60px rgba(54, 44, 192, 0.1);
         }
 
         .icon-wrapper {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             margin-bottom: 25px;
         }
 
         .icon-svg {
-            fill: url(#ui-gradient);
-            width: 100%;
-            height: 100%;
+            fill: var(--primary-blue);
+            width: 100%; height: 100%;
         }
+
+        .card:nth-child(even) .icon-svg { fill: var(--primary-red); }
 
         .card h4 {
             font-size: 1.25rem;
             font-weight: 700;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             color: #111;
         }
 
@@ -135,64 +128,50 @@
             line-height: 1.6;
         }
 
-        /* --- CTA BUTTON --- */
         .btn-cta {
             display: inline-block;
-            padding: 20px 40px;
-            margin-top: 25px;
+            padding: 22px 50px;
+            margin-top: 15px;
             background: var(--primary-gradient);
             color: #fff;
             text-decoration: none;
-            font-weight: 700;
-            border-radius: 50px;
-            transition: var(--transition);
-            box-shadow: 0 10px 25px rgba(223, 66, 49, 0.3);
+            font-weight: 800;
+            border-radius: 100px;
+            transition: 0.3s;
+            box-shadow: 0 10px 25px rgba(223, 66, 49, 0.2);
             font-size: 1.1rem;
         }
 
         .btn-cta:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(54, 44, 192, 0.4);
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(54, 44, 192, 0.3);
         }
 
-        /* --- RESPONSIVE --- */
         @media (max-width: 1024px) {
             .content-container { grid-template-columns: 1fr; }
-            .main-headline { font-size: 3rem; }
+            .main-headline { font-size: 3.5rem; }
         }
 
         @media (max-width: 768px) {
-            .cards-grid { grid-template-columns: 1fr; }
-            .main-headline { font-size: 2.4rem; }
-            .section-wrapper { margin: 40px auto; }
+            .main-headline { font-size: 2.8rem; }
+            .sub-headline { font-size: 1.4rem; }
         }
     </style>
 </head>
 <body>
 
-    <svg style="width:0;height:0;position:absolute;">
-        <linearGradient id="ui-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#DF4231; stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#362CC0; stop-opacity:1" />
-        </linearGradient>
-    </svg>
-
     <section class="section-wrapper">
         <header class="section-header">
-            <span class="question-heading">WHY CHOOSE TAVISH INFOTECH?</span>
-            <h1 class="main-headline">
-                The Trusted Oracle Partner <br> for Global Digital Excellence
-            </h1>
-            <p class="intro-text">
-                We combine AI-driven innovation with certified Oracle expertise to deliver mission-critical solutions that drive real business value.
-            </p>
+            <h1 class="main-headline">WHY CHOOSE TAVISH INFOTECH?</h1>
+            
+            <p class="sub-headline">Your Trusted Oracle Partner Company for Digital Excellence</p>
         </header>
 
         <div class="content-container">
             <div class="description-content">
                 <h3>Premier AI-Powered Oracle APEX Development</h3>
-                <p>Tavish Infotech is a leading AI-powered Oracle APEX development company headquartered in India, specializing in intelligent low-code application development using Oracle Application Express. As a certified Oracle Partner company, we deliver Oracle solutions India’s top enterprises trust for mission-critical operations.</p>
-                <p>With over 500 successful implementations across USA, Canada, Europe, and UAE, we’ve proven our capability to deliver enterprise-grade solutions that simplify complex business processes.</p>
+                <p>Tavish Infotech is a leading AI-powered Oracle APEX development company headquartered in India, specializing in intelligent low-code application development using Oracle Application Express.</p>
+                <p>As a certified Oracle Partner company, we deliver Oracle solutions India’s top enterprises trust for mission-critical operations with over 500 successful implementations worldwide.</p>
                 
                 <a href="#" class="btn-cta">Get Free Oracle Consultation</a>
             </div>
@@ -203,31 +182,31 @@
                         <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
                     </div>
                     <h4>Oracle Certified Expertise</h4>
-                    <p>Building solutions following Oracle best practices, ensuring optimal performance and enterprise security.</p>
+                    <p>Building solutions following Oracle best practices, ensuring optimal performance.</p>
                 </div>
 
                 <div class="card">
                     <div class="icon-wrapper">
                         <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
                     </div>
-                    <h4>Proven Global Track Record</h4>
-                    <p>Successful implementations across India, USA, Canada, Europe, and UAE in multiple sectors.</p>
+                    <h4>Global Track Record</h4>
+                    <p>Successful implementations across India, USA, Canada, Europe, and UAE.</p>
                 </div>
 
                 <div class="card">
                     <div class="icon-wrapper">
                         <svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C8.29 12.42 7 10.78 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.78-1.29 3.42-3.15 4.1z"/></svg>
                     </div>
-                    <h4>AI & Innovation Leadership</h4>
-                    <p>Integrating machine learning and predictive analytics directly into your Oracle APEX applications.</p>
+                    <h4>AI Innovation</h4>
+                    <p>Integrating machine learning directly into your Oracle APEX applications.</p>
                 </div>
 
                 <div class="card">
                     <div class="icon-wrapper">
                         <svg class="icon-svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
                     </div>
-                    <h4>24/7 Global Support</h4>
-                    <p>Round-the-clock availability with global delivery support and on-site engagement options.</p>
+                    <h4>24/7 Support</h4>
+                    <p>Round-the-clock availability with global delivery support options.</p>
                 </div>
             </div>
         </div>
